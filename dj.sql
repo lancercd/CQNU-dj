@@ -155,7 +155,7 @@ DROP TABLE IF EXISTS `tb_tk_dmemship`;
 CREATE TABLE `tb_tk_dmemship` (
   `dship_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '联系人id',
   `user_id` int(11) NOT NULL COMMENT '用户id',
-  `dship_name` varchar(20) DEFAULT NULL COMMENT '联系人姓名',
+  `dship_name` varchar(25) DEFAULT NULL COMMENT '联系人姓名',
   `dship_phone` char(11) DEFAULT NULL COMMENT '联系人电话',
   `dship_message` varchar(255) DEFAULT NULL COMMENT '联系人信息',
   PRIMARY KEY (`dship_id`)
@@ -381,7 +381,7 @@ CREATE TABLE `tb_tk_totrain` (
 DROP TABLE IF EXISTS `tb_tk_trainer`;
 CREATE TABLE `tb_tk_trainer` (
   `trainer_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '培养人id',
-  `trainer_name` varchar(255) DEFAULT NULL COMMENT '培养人姓名',
+  `trainer_name` varchar(25) DEFAULT NULL COMMENT '培养人姓名',
   `trainer_state` int(1) DEFAULT NULL COMMENT '身份状态',
   `branch_id` int(11) DEFAULT NULL COMMENT '隶属支部',
   `trainer_phone` char(11) DEFAULT NULL COMMENT '联系方式',
@@ -400,8 +400,8 @@ CREATE TABLE `tb_tk_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户id',
   `user_phone` char(11) DEFAULT NULL COMMENT '手机号',
   `user_cid` varchar(50) DEFAULT NULL COMMENT '身份证号',
-  `user_sid` int(50) DEFAULT NULL COMMENT '学号',
-  `user_name` varchar(50) DEFAULT NULL COMMENT '姓名',
+  `user_sid` char(15) DEFAULT NULL COMMENT '学号',
+  `user_name` varchar(25) DEFAULT NULL COMMENT '姓名',
   `user_pwd` varchar(255) DEFAULT NULL COMMENT '密码',
   `trainer_id` int(11) DEFAULT NULL COMMENT '培养人id',
   `trainer_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '指定培养人时间',
