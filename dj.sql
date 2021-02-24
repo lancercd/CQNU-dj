@@ -230,7 +230,7 @@ CREATE TABLE `tb_tk_lecturecord` (
   `lcord_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '记录时间',
   `user_id` int(11) NOT NULL COMMENT '用户id',
   `lcord_state` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '考勤状态',
-  `lcord_grade` int(20) DEFAULT NULL COMMENT '考试成绩',
+  `lcord_grade` int(11) DEFAULT NULL COMMENT '考试成绩',
   `lcord_pass` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否合格',
   PRIMARY KEY (`lcord_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='党课培训记录表';
