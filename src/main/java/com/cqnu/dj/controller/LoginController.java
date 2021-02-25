@@ -1,14 +1,17 @@
 package com.cqnu.dj.controller;
 
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class IndexController {
+public class LoginController {
 
-    @RequestMapping("/index")
-    public String index(){
+    @RequestMapping("/user/login")
+    public String login(@RequestParam("username") String username, @RequestParam("pwd") String pwd, Model model){
+
         return "index";
     }
 }
