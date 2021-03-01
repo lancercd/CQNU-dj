@@ -24,4 +24,5 @@ public class TbTkUser {
     private int userSex;
     private String userPic;
     private int userMm;
+
 }

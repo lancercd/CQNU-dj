@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>登录</title>
+        <link rel="stylesheet" href="/static/css/login.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <form th:action="@{/user/login}" class="login-form" method="post">
+            <h1>Log In</h1>
+
+
+            <div class="info" id="info">
+                <p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+            </div>
+
+            <div class="txtb">
+                <input type="text" name="username">
+                <span data-placeholder="Username"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="password" name="pwd">
+                <span data-placeholder="Password"></span>
+            </div>
+
+            <input type="submit" class="logbtn" value="Log In">
+
+            <div class="bottom-text">
+                Don't have account? <a href="#">Sign up</a>
+            </div>
+
+        </form>
+
+        <script type="text/javascript">
+            $(".txtb input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+            $(".txtb input").on("blur", function(){
+                if($(this).val() == "")
+                $(this).removeClass("focus");
+            });
+        </script>
+
+    </body>
+</html>

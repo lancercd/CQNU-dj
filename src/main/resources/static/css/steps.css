@@ -1,0 +1,47 @@
+
+.step-box{
+    width: 100%;
+    padding-top: 15px;
+}
+
+.step-box .title{
+    color: #777;
+    font-size: 18px;
+}
+
+
+.step-box .list-box{
+    margin: 10px 0;
+}
+
+.step-box .list-box a{
+    text-decoration: none;
+}
+
+.step-box .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 15px;
+    margin: 10px 0;
+    background-color: #e67e22;
+    color: white;
+}
+
+.step-box .item .item-info{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.step-box .item .describe{
+    font-size: 16px;
+    color: white;
+}
+
+.step-box .item .btns{
+    display: block;
+}

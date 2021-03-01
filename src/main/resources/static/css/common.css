@@ -1,0 +1,108 @@
+#container {/*固定网页框架*/
+    margin: 0px auto;/*使整个页面居中*/
+    width: 100%;/*宽度*/
+    padding: 0px;
+}
+.container{
+    padding: 0;
+}
+#top{
+    border: 0px #006600 solid;
+    height: 40px;
+
+    font-size: 20px;
+}
+#top-right{
+    border: 0px #006600 solid;
+    height: 40px;
+    font-size: 20px;
+    float: right;
+}
+#top-left{
+    border: 0px #006600 solid;
+    height: 40px;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+#banner{
+    border: 1px #000099 solid;
+    height: 300px;
+    font-size: 20px;
+    width: 100%;
+    float: center;
+    background: #fa1500;
+}
+#position{
+    border: 0px #000099 solid;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    color: #eb301f;
+}
+#tip{
+    border: 1px #000099 solid;
+    height: 220px;
+    font-size: 15px;
+    width: 100%;
+    float: center;
+
+}
+#img_bag {
+    height: 90px;
+    margin: 0 auto;
+    float: center;
+}
+
+#img_bag a {
+    float: left;
+    width: 350px;
+    display: block;
+    height: 10px;
+    font-weight: bold;
+}
+
+#img_bag #img {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    overflow: hidden;
+    float: left
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 10000px;
+}
+
+.btnclick{
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+    margin: 5px;
+}
+
+.navitem {
+    margin: 10px 5px;
+    padding: 0;
+    width: 120px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: cneter;
+    background-color: rgba(223, 0, 2, 0.95);
+}
+
+
+.page-title{
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 2px #000 solid;
+    text-align: center;
+}
